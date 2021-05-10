@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<head>
+    <title>Homework 18</title>
+    <link href="css/index.css" rel="stylesheet" type="text/css">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+</head>
+
+<body>
+<!--Nav Bar-->
+    <section class="header">
+        <div class="logo"><img src="../UX_UI_HW_19/images/MonicaViada_logo.png"></div>
+    <div class="nav-container">
+        <div class="navtitle">Works</a></div>
+        <div class="navtitle">About</div>
+        <div class="navtitle">Resume</div>
+        <div class="navtitle">Contact</div>
+    </div>
+    </section>
+
+<!--  My Skills section coded using CSS flex -->
+<section class="mySkills">
+    <h1>My Skills</h1>
+    <div class="flexContainer">
+        <div>
+            <img src="images/ux-ui-design.png">
+            <h3>UX/UI Design</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras suscipit aliquam sem at tempor. Nulla vehicula rutrum felis, vel venenatis massa luctus a. Vestibulum eleifend elit id ligula.</p>
+        </div>
+        <div>
+            <img src="images/graphic-design.png">
+            <h3>Graphic Design</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras suscipit aliquam sem at tempor. Nulla vehicula rutrum felis, vel venenatis massa luctus a. Vestibulum eleifend elit id ligula.</p>
+        </div>
+        <div>
+            <img src="images/branding.png">
+            <h3>Branding</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras suscipit aliquam sem at tempor. Nulla vehicula rutrum felis, vel venenatis massa luctus a. Vestibulum eleifend elit id ligula.</p>
+        </div>
+</div>
+</section>
+<br>
+<!--  My Work section coded using CSS Grid -->
+<section class="myWork">
+    <h1>My Work</h1>
+    <div class="workGrid">
+        <div class="CrystalClearimg myWorkimg">
+            <img src="images/crystal-clear.jpg">
+        </div>
+        <div class="CrystalClearCopy myWorkcopy">
+            <h4>Crystal Clear Mobile App</h4>
+            <p>Here is a blurb about Crystal Clear Mobile App. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras suscipit aliquam sem at tempor. Nulla vehicula rutrum felis, vel venenatis massa luctus a. Vestibulum eleifend elit id ligula.</p>
+            <button class="CTA">View Project</button>
+        </div>
+        <div class="DOIimg myWorkimg">
+            <img src="images/DOI.png">
+        </div>
+        <div class="DOICopy myWorkcopy">
+            <h4>U.S. Department of the Interior Redesigned Website</h4>
+            <p>Here is a blurb about the redesign of the U.S. Department of the Interior. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras suscipit aliquam sem at tempor. Nulla vehicula rutrum felis, vel venenatis massa luctus a. Vestibulum eleifend elit id ligula.</p>
+            <button class="CTA">View Project</button>
+        </div>
+        <div class="CatsInKneadimg myWorkimg">
+            <img src="images/cats-in-knead.png">
+        </div>
+        <div class="CatsInKneadCopy myWorkcopy">
+            <h4>Cats in Knead Redesigned Website</h4>
+            <p>Here is a blurb about the redesign of Cats in Knead's website. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras suscipit aliquam sem at tempor. Nulla vehicula rutrum felis, vel venenatis massa luctus a. Vestibulum eleifend elit id ligula.</p>
+            <button class="CTA">View Project</button>
+        </div>
+    </div>
+</section>
+<!--All Projects-->
+<section class="allProjects">
+    <a href="#Projects"><h2>View All Projects</h2></a>
+</section>
+    
+<!--Scroll to Top-->
+<a href="#" class="scrollToTop"><i class="fa fa-arrow-up" aria-hidden="true"></i></a>
+
+<!--JQuery Script-->
+<script src="js/index.js"></script>
+
+<script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+<script type="text/javascript">
+    $(document).ready(function(){
+
+        //show hide button on scroll
+        $(window).scroll(function(){
+            if($(this).scrollTop() > 100){
+                $('.scrollToTop').fadeIn();
+            } else {
+                $('.scrollToTop').fadeOut();
+            }
+        });
+
+        //smooth scrolling to top
+            $('.scrollToTop').click(function(){
+                $('html,body').animate({scrollTop: 0}, 1000) //animation time
+            })
+    });
+</script>
+</body>

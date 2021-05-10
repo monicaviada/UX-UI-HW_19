@@ -1,0 +1,239 @@
+h1 {
+    text-align: center;
+    font-size: 36px;
+    font-family: sans-serif;
+    margin: 0;
+}
+
+h2 {
+    text-align: left;
+    font-size: 28px;
+    font-family: sans-serif;
+    margin: 0;
+    color: black;
+    cursor: pointer;
+    display: inline-block;
+    padding: 0;
+}
+
+h2:hover{
+    transition: ease;
+    transition-duration: 0.5s;
+    color: rgb(255, 108, 14);
+}
+
+h3 {
+    text-align: center;
+    font-size: 24px;
+    font-family: sans-serif;
+    margin: 0;
+}
+
+h4 {
+    text-align: left;
+    font-size: 20px;
+    font-family: sans-serif;
+    margin: 20px;
+}
+
+p {
+    font-size: 18px;
+    font-weight: 300;
+    text-align: left;
+    font-family: sans-serif;
+}
+
+.header {
+    height: 73px;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+  
+.logo {
+    width: 165.6px;
+    height: 70px;
+    float: left;
+}
+  
+.nav-container{
+    display: block;
+    float: right;
+    padding-top: 37px;
+}
+  
+.navtitle {
+    display: inline-block;
+    font-family: sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    padding-right: 60px;
+    text-align: left;
+    color: #1e1b1c;
+}
+
+.navtitle:hover{
+    color: rgb(255, 108, 14);
+    transition: ease;
+    transition-duration: 0.2s;
+}
+
+.mySkills {
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+.flexContainer {
+    display: flex;
+    flex-direction: row;
+    align-content: space-between;
+    padding-top: 30px;
+}
+
+.flexContainer div {
+    width: 100%;
+    padding-bottom: 20px;
+    align-items: center;
+    align-content: center;
+    text-align: center;
+}
+
+.flexContainer img {
+    width: 300px;
+}
+
+.flexContainer p {
+    width: 100%;
+    text-align: center;
+    margin: auto;
+    max-width: 300px; /*actual image width*/
+}
+
+.flexContainer h3 {
+    width: 100%;
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.CTA {
+    border: none;
+    color: #ffffff;
+    background-color: #3c3c3c;
+    height: 40px;
+    width: 200px;
+    text-align: center;
+    font-size: 18px;
+    font-family: sans-serif;
+    font-weight: 600;
+}
+
+.CTA:hover{
+    background-color: rgb(255, 108, 14);
+    transition: ease;
+    transition-duration: 0.5s;
+}
+
+.myWork{
+padding: 50px 50px 0px 50px;
+}
+
+.workGrid {
+    display: grid;
+    grid-template-columns: 40% 60%;
+    grid-template-rows: 300px 300px 300px;
+    grid-template-areas:
+    "CrystalClearimg CrystalClearCopy"
+    "DOIimg DOICopy"
+    "CatsInKneadimg CatsInKneadCopy"
+    ;
+    justify-items: center;
+    align-items: center;
+}
+
+.myWorkimg{
+    align-items: center;
+}
+
+.myWorkimg img{
+   width: 100%;
+}
+
+.myWorkcopy {
+    width: 100%;
+}
+
+.CrystalClearimg {
+    grid-area: myWorkimg img;
+    width: 80%;
+}
+
+.DOIimg {
+    grid-area: myWorkimg img;
+}
+
+.CatsInKneadimg {
+    grid-area: myWorkimg img;
+}
+
+.CrystalClearCopy {
+    grid-area: CrystalClearCopy;
+}
+
+.DOICopy {
+    grid-area: DOICopy;
+}
+
+.CatsInKneadCopy {
+    grid-area: CatsInKneadCopy;
+}
+
+.allProjects{
+    padding: 50px;
+}
+
+@media only screen and (max-width: 500px) {
+    .flexContainer {
+        flex-direction: column;
+        width: 100%;
+        margin: 0px;
+    }
+
+    .workGrid {
+        flex-direction: column;
+        grid-template-rows: repeat(6, 1fr);
+        grid-template-columns: 1fr;
+        grid-template-areas:
+            "CrystalClearimg"
+            "CrystalClearCopy"
+            "DOIimg"
+            "DOICopy"
+            "CatsInKneadimg"
+            "CatsInKneadCopy"
+        ;
+    }
+
+    .myWorkcopy {
+        max-width: 400px;
+    }
+}
+
+.scrollToTop {
+    position: fixed;
+    bottom: 80px;
+    right: 50px;
+    width: 60px;
+    height: 60px;
+    line-height: 60px;
+    text-align: center;
+    background: #939393;
+    color: #ffffff;
+    display: none;
+}
+
+.scrollToTop:hover{
+    background: #3c3c3c;
+    transition: ease;
+    transition-duration: 0.5s;
+}
